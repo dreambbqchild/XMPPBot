@@ -23,3 +23,5 @@ Two things:
 </pre>
 
 Notice: This project makes use of libstrophe and its dependencies.
+
+Use at your own risk. :)
