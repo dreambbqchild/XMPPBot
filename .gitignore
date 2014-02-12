@@ -1,0 +1,5 @@
+*.json
+*.DS_Store
+*/xcuserdata/*
+XMPPBot/fortunes
+XMPPBot/B5-Quotes
