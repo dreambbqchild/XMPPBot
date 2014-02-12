@@ -10,7 +10,6 @@
 		443D681E18AB260800B76D71 /* libstrophe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 443D681D18AB260800B76D71 /* libstrophe.a */; };
 		443D682318AB2CAC00B76D71 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443D682218AB2CAC00B76D71 /* Security.framework */; };
 		4448F4BA18A6FD91009E420D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4448F4B918A6FD91009E420D /* Foundation.framework */; };
-		44A7E68518A9D2DC00F542CD /* B5-Quotes in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44A7E68218A9D1DF00F542CD /* B5-Quotes */; };
 		44A7E68618A9D2DC00F542CD /* fortunes in CopyFiles */ = {isa = PBXBuildFile; fileRef = 44A7E68318A9D1DF00F542CD /* fortunes */; };
 		44C175DF18A8857A00E4889C /* AnagramBot.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C175D318A8857A00E4889C /* AnagramBot.m */; };
 		44C175E018A8857A00E4889C /* BotFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C175D618A8857A00E4889C /* BotFactory.m */; };
@@ -29,7 +28,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				44A7E68518A9D2DC00F542CD /* B5-Quotes in CopyFiles */,
 				44A7E68618A9D2DC00F542CD /* fortunes in CopyFiles */,
 				44C175E518A8859300E4889C /* anagrams.xml in CopyFiles */,
 				44C175E618A8859300E4889C /* config.json in CopyFiles */,
