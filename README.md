@@ -22,6 +22,13 @@ Two things:
 }
 </pre>
 
+Using a Bot:
+------------
+Bots respond to switches where switches are defined at the start of a line and are prefixed with a forward slash '/'. At the time of this writing the three bots you can invoke would be:
+* /? to get a list of the loaded bots
+* /fortune to get a unix fortune
+* /anagaram to find anagrams for all the words following the /anagram switch
+
 Notice: This project makes use of libstrophe and its dependencies.
 
 Use at your own risk. :)
