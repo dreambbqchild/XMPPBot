@@ -10,6 +10,9 @@
 #import "../include/Bot.h"
 
 @interface AnagramBot : NSObject <NSXMLParserDelegate, Bot>
+// Initalizes the Bot with an Anagram XML file.
 -(id)initWithFile:(NSString*) file;
+
+// Looks up an anagram for the word supplied.
 -(NSString*) getAnagramForWord:(NSString*) word;
 @end

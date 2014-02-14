@@ -10,5 +10,7 @@
 #import "../include/Bot.h"
 
 @interface FortuneBot : NSObject<Bot>
+// Initalizes a Fortune Bot with an array of UNIX Fortune files
+// to use as its database.
 -(id)initWithFortuneFiles:(NSArray*)paths;
 @end

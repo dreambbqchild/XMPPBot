@@ -10,6 +10,10 @@
 #import "../include/Bot.h"
 
 @interface BotFactory : NSObject<Bot>
--(void)registerBot:(id<Bot>) bot;
+// Registers a bot with the factory for use.
+-(void)registerBot:(NSObject<Bot>*) bot;
+
+// Passes a string to the factory for bot lookup and processing.
+// Returns nil if the |body| didn't trigger a bot to process.
 -(NSArray*) processWithBot:(NSString*)body;
 @end

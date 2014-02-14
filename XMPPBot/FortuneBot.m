@@ -42,10 +42,6 @@
     return @"fortune";
 }
 
--(BOOL) respondToAll{
-    return FALSE;
-}
-
 -(NSArray*) processRequestWithContent:(NSString*) content{
     return [[_fortunes objectAtIndex:rand() % [_fortunes count]] componentsSeparatedByString:@"\n"];
 }

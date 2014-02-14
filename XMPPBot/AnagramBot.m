@@ -84,10 +84,6 @@
     return @"anagram";
 }
 
--(BOOL) respondToAll{
-    return FALSE;
-}
-
 -(NSArray*) processRequestWithContent:(NSString*) content {
     NSArray* wordArray = [content componentsSeparatedByString:@" "];
     NSMutableArray* results = [[NSMutableArray alloc] init];

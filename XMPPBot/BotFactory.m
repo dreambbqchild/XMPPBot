@@ -23,6 +23,9 @@
     if(self)
     {
         _bots = [[NSMutableDictionary alloc] init];
+        // This regex is responsible for parsing the input string into the switch
+        // (where switches are the first thing on the line and start with a forward slash /
+        // and then the value the bot has for respondsToSwitch), and the content that follows.
         _regex = [NSRegularExpression regularExpressionWithPattern:@"/([\\w|\\?]+)\\s?(.*)" options:NSRegularExpressionCaseInsensitive error:nil];
         _respondToAll = nil;
         
@@ -32,8 +35,8 @@
     return self;
 }
 
--(void) registerBot:(id<Bot>)bot{
-    if([bot respondToAll])
+-(void) registerBot:(NSObject<Bot>*)bot{
+    if([bot respondsToSelector:@selector(respondToAll)] && [bot respondToAll])
         _respondToAll = bot;
     else
         [_bots setObject:bot forKey:[bot respondsToSwitch]];
@@ -62,10 +65,6 @@
 
 -(NSString*) respondsToSwitch {
     return @"?";
-}
-
--(BOOL) respondToAll{
-    return FALSE;
 }
 
 -(NSArray*) processRequestWithContent:(NSString*) content{

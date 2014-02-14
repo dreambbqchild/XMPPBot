@@ -10,6 +10,9 @@
 #import "BotFactory.h"
 
 @interface XMPP : NSObject
+// Connects to the XMPP service with the supplied |id| and |password| to the supplied |url|
 -(BOOL)connectWithJID:(NSString*) jid andPassword:(NSString*)password toURL:(NSString*) url;
+
+// Factory that gives access to the bots.
 -(BotFactory*)botFactory;
 @end
